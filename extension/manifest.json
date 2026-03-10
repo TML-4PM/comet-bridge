@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Snaps by Comet",
+  "short_name": "Snaps",
+  "description": "Save what's in this tab so you can close it without fear. Tab Memory by Comet.",
+  "version": "0.1.0",
+  "permissions": ["tabs", "storage", "scripting", "activeTab", "notifications"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Create Snap",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
